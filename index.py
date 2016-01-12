@@ -11,3 +11,8 @@ if __name__ == '__main__':
   x = TemplateKlass()
   x.setName('X')
   print x.getName()
+
+  # [Test] - CustomSelenium Klass
+  from CustomSelenium import CustomSeleniumKlass
+  y = CustomSeleniumKlass('https://www.google.co.jp/')
+  y.bind()

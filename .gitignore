@@ -4,3 +4,6 @@
 
 # Cache
 *.pyc
+
+# Image
+*.png

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 ''' @ /klass/Template.py '''
 
 class TemplateKlass:
@@ -15,9 +14,9 @@ class TemplateKlass:
     return 'This is TemplateKlass.'
 
   def getName(self):
-    ''' Class [ TemplateKlass ] - getName => Get self.name '''
+    ''' Class [ TemplateKlass ] - getName(none) => Get self.name '''
     return self.name
 
   def setName(self, name):
-    ''' Class [ TemplateKlass ] - setName => Set self.name '''
+    ''' Class [ TemplateKlass ] - setName(nameStr) => Set self.name '''
     self.name = name
