@@ -1,11 +1,13 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 
-### Hello World
+# Import
+import common
+common.init(['/klass'])
 
-# Hello World [1]
-print 'Hello world! [1]'
+if __name__ == '__main__':
 
-# Hello World [2]
-print 'Hello world! [2]'
-
-# -----------------------------------------------------------
+  # [Test] - Temlate Klass
+  from Template import TemplateKlass
+  x = TemplateKlass()
+  x.setName('X')
+  print x.getName()

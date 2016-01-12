@@ -1,0 +1,6 @@
+# Editor
+*.sublime-workspace
+*.sublime-project
+
+# Cache
+*.pyc
