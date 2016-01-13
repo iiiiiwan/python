@@ -2,6 +2,37 @@
 ---
 <br />
 
+### Print - Output
+```Python
+  print 'HOGE'
+  print 'HOGE'
+  print 'HOGE'
+    # => HOGE
+    # => HOGE
+    # => HOGE
+
+  print 'HOGE',
+  print 'HOGE',
+  print 'HOGE'
+    # => HOGE HOGE HOGE
+```
+
+<br />
+---
+<br />
+
+### Interactive Input
+```Python
+  name = raw_input('Enter Name : ')
+    # => Interactive Mode
+  print name
+    # => Input String
+```
+
+<br />
+---
+<br />
+
 ### Load (Configuration For 'import')
 ```Python
   import sys, os
@@ -194,6 +225,96 @@
   # t.cancel()
 
     # => Cancel Thead's delay
+```
+
+<br />
+---
+<br />
+
+### Directory List
+```Python
+  import glob
+  ioDir = glob.glob('./tmp/*')
+  print ioDir
+    # => List up All File Name under [./tmp/]
+```
+
+<br />
+---
+<br />
+
+### Read File - .txt
+```Python
+  f = open('./tmp/plainText.txt', 'r')
+  for line in f:
+    print line
+      # => Each Line
+```
+
+<br />
+---
+<br />
+
+### Read File - .json
+```Python
+  import json
+  f = open('./tmp/sample.json', 'r')
+  jsonData = json.load(f)
+  print jsonData['GROUP_1']['a']
+    # => 100
+  print jsonData['GROUP_1']['A']
+    # => KeyError
+
+  print json.dumps(
+    jsonData,
+    sort_keys = True,
+    indent = 2
+  )
+    # => Format Json
+```
+
+<br />
+---
+<br />
+
+### Write File - Add - .txt
+```Python
+  str = '\nHOGEHOGEHOGE'
+  f = open('./tmp/plainText.txt', 'a')
+  f.write(str)
+  f.close()
+    # => Write '\nHOGEHOGEHOGE'
+```
+
+<br />
+---
+<br />
+
+### Write File - New - .txt
+```Python
+  str = '\nHOGEHOGEHOGE'
+  f = open('./tmp/plainText.txt', 'w')
+  f.write(str)
+  f.close()
+    # => Create [./tmp/plainText.txt] + Write '\nHOGEHOGEHOGE'
+```
+
+<br />
+---
+<br />
+
+### Write File - .json
+```Python
+  import json
+  f = open('./tmp/sample.json', 'r')
+  ff = json.dumps(
+    json.load(f),
+    sort_keys = True,
+    indent = 2
+  )
+  f = open('./tmp/sample_ff.json', 'w')
+  f.write(ff)
+  f.close()
 ```
 
 <br />

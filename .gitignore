@@ -5,5 +5,5 @@
 # Cache
 *.pyc
 
-# Image
-*.png
+# Test
+tmp
