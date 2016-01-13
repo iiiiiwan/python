@@ -79,6 +79,21 @@
 ---
 <br />
 
+### Loop - Array + For - index / value
+```Python
+  sampleList = ['A', 'B', 'C'];
+  for idx, val in enumerate(sampleList):
+    print str(idx) + ' - ' + str(val)
+      # =>
+      #   0 - A
+      #   1 - B
+      #   2 - C
+```
+
+<br />
+---
+<br />
+
 ### Default Exception - try + except
 
 ```Python
@@ -325,11 +340,50 @@
 
 １． str - Number => String
 ```Python
-print 'Year' + 2016
-  # => TypeError
+  print 'Year' + 2016
+    # => TypeError
 
-print 'Year' + str(2016)
-  # => Year2016
+  print 'Year' + str(2016)
+    # => Year2016
+```
+
+<br />
+
+２．random - **import random**
+```Python
+  print random.random()
+    # => float (0.0 - 1.0)
+
+  print random.uniform(1, 100)
+    # => float (x - y)
+
+  print random.randint(1, 100)
+    # => int (x - y)
+
+  print random.choice('abc')
+    # => pickup
+
+  sampleList = ['A', 'B', 'C']
+  random.shuffle(sampleList)
+  print sampleList
+    # => shuffled array
+```
+
+<br />
+---
+<br />
+
+### Lamda
+```Python
+  xxx = lambda num_1, num_2 : num_1 + num_2
+    # => lambda x : y
+    #      x == arguments
+    #      y == return
+  print xxx(1, 9)
+    # => 10
+
+  print (lambda num_1, num_2 : num_1 + num_2)(1, 9)
+    # => 10
 ```
 
 <br />
@@ -340,15 +394,15 @@ print 'Year' + str(2016)
 
 １． No Increment(++) or Decrement(--)
 ```Python
-errCnt = 1
-errCnt++
-print errCnt
-  # => SyntaxError
+  errCnt = 1
+  errCnt++
+  print errCnt
+    # => SyntaxError
 
-errCnt = 1
-errCnt += 1
-print errCnt
-  # => 2
+  errCnt = 1
+  errCnt += 1
+  print errCnt
+    # => 2
 ```
 
 <br />
