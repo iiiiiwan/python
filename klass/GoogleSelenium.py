@@ -35,3 +35,12 @@ class GoogleSeleniumKlass(SeleniumKlass):
     finally:
       print '\nFin.\n'
       driver.close();
+
+# Sub Import
+# from GoogleSelenium import GoogleSeleniumKlass;
+## [Test] - GoogleSelenium Klass
+# test = GoogleSeleniumKlass(
+#   'Google',
+#   'https://www.google.co.jp/'
+# );
+# test.bind();

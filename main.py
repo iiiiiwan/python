@@ -1,22 +1,20 @@
 # -*- coding: utf-8 -*-
 
-# Import
-import common;
-common.init(
-  [
-    '/klass',
-    '/klass/implements'
-  ]
-);
-
-# Sub Import
-from GoogleSelenium import GoogleSeleniumKlass;
+'''
+main.py
+'''
+__author__ = 'rustywoman'
+__status__ = 'production'
+__version__ = '0.0.1'
 
 if __name__ == '__main__':
 
-  # [Test] - GoogleSelenium Klass
-  # test = GoogleSeleniumKlass(
-  #   'Google',
-  #   'https://www.google.co.jp/'
-  # );
-  # test.bind();
+  import common;
+  common.init(
+    [
+      '/klass',
+      '/klass/implements'
+    ]
+  );
+
+  print 'main.py';
